@@ -1,9 +1,11 @@
-const Pool = require(pg).Pool;
+const DataBase = require(pg).Pool;
 
-const pool = new Pool({
-    user: "username",
-    password: "password",
-    host: "server",
-    port: 5432,
-    database: "database name"
-});
+const database = new Pool({
+        user: "usernmae",
+        password: "password",
+        host: "server name",
+        port: 5432,
+        database: "database name"
+    });
+
+module.exports = DataBase;
